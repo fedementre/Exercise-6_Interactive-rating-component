@@ -232,5 +232,10 @@ a:visited{
 text-align: center;
 }
 
+.value-button:focus{
+  background-color: $orange-primary;
+  color: white;
+}
+
 
 
