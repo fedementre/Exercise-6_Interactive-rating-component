@@ -1,0 +1,16 @@
+//main: main.scss
+
+@mixin center {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: $standard-margin-bottom;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: $standard-margin-bottom;
+
+}
