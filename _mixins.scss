@@ -14,3 +14,18 @@
     margin-bottom: $standard-margin-bottom;
 
 }
+
+@mixin before-input ($content){
+    content: $content;
+    color: $light-grey;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $background-text;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: $higth-margin-botton;
+}
+

@@ -130,7 +130,7 @@ main {
   color: hsl(217deg, 12%, 63%);
 }
 
-button.value-button {
+.value-button {
   border: 0rem white solid;
   color: hsl(217deg, 12%, 63%);
 }
@@ -141,7 +141,7 @@ button.value-button {
   cursor: pointer;
 }
 
-.button {
+.submit {
   background-color: hsl(25deg, 97%, 53%);
   color: white;
   width: 100%;
@@ -217,4 +217,98 @@ a:visited {
 
 .paragraph-2 {
   text-align: center;
+}
+
+.value-button:focus {
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+}
+
+input {
+  display: none;
+}
+
+label[for=inp1]:before {
+  content: "1";
+  color: hsl(217deg, 12%, 63%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsla(210deg, 22%, 25%, 0.515);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+}
+
+label[for=inp2]:before {
+  content: "2";
+  color: hsl(217deg, 12%, 63%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsla(210deg, 22%, 25%, 0.515);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+}
+
+label[for=inp3]:before {
+  content: "3";
+  color: hsl(217deg, 12%, 63%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsla(210deg, 22%, 25%, 0.515);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+}
+
+label[for=inp4]:before {
+  content: "4";
+  color: hsl(217deg, 12%, 63%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsla(210deg, 22%, 25%, 0.515);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+}
+
+label[for=inp5]:before {
+  content: "5";
+  color: hsl(217deg, 12%, 63%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsla(210deg, 22%, 25%, 0.515);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+}
+
+:is(#inp1:checked, #inp2:checked, #inp3:checked, #inp4:checked, #inp5:checked) + label:before {
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+}
+
+label:hover:before {
+  background-color: hsl(217deg, 12%, 63%);
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

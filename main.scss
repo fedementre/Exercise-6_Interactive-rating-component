@@ -137,7 +137,7 @@ main{
     color: $light-grey;
 }
 
-button.value-button{
+.value-button{
     border: 0rem white solid;
     color: $light-grey;
 
@@ -150,7 +150,7 @@ button.value-button{
 }
 
 
-.button{
+.submit{
     background-color: $orange-primary;
     color: white;
     width: 100%;
@@ -232,9 +232,53 @@ a:visited{
 text-align: center;
 }
 
+
 .value-button:focus{
   background-color: $orange-primary;
   color: white;
+}
+
+
+input{
+  display: none;
+}
+
+label[for="inp1"]:before{
+ @include before-input($content: "1")
+}
+
+label[for="inp2"]:before{
+  @include before-input($content: "2")
+ }
+
+ label[for="inp3"]:before{
+  @include before-input($content: "3")
+ }
+ 
+ label[for="inp4"]:before{
+   @include before-input($content: "4")
+  }
+
+  label[for="inp5"]:before{
+    @include before-input($content: "5")
+   }
+
+
+
+:is(#inp1:checked, #inp2:checked, #inp3:checked, #inp4:checked, #inp5:checked) + label:before{
+  background-color: $orange-primary;
+  color: $whiteText;
+}
+
+label:hover:before{
+  background-color: $light-grey;
+  color: white;
+
+}
+
+.input-container{
+  display: flex;
+  justify-content: space-between;
 }
 
 
